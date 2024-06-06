@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinator</title>
+
+    <style>
+      div p {
+        background-color: tomato;
+      }
+
+      div > p {
+        background-color: gold;
+      }
+
+      section ~ main,
+      section ~ h1 {
+        background-color: chocolate;
+      }
+
+      main + h1 {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      <p>Nulla minus odit velit numquam beatae magni.</p>
+      <span>
+        <p>Cum in fugiat aspernatur et. Labore, quasi!</p>
+      </span>
+    </div>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <section>Lorem ipsum dolor sit amet.</section>
+    <main>Lorem ipsum dolor sit amet.</main>
+    <h1>Lorem, ipsum dolor.</h1>
+    <h1>Unde, magnam quod!</h1>
+  </body>
+</html>
