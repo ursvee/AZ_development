@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        .btn {
+            padding: 6px 10px;
+            background-color: gold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-hover:hover {
+            background-color: tomato;
+            color: #fff;
+        }
+
+        .btn-active:active {
+            background-color: tomato;
+            color: #fff;
+        }
+
+        .btn-focus:focus {
+            background-color: tomato;
+            color: #fff;
+        }
+
+        div {
+            margin-top: 10px;
+        }
+
+        div::before,
+        div::after {
+            color: tomato;
+            font-weight: bold;
+            color: tomato;
+            font-weight: bold;
+        }
+
+        div::before {
+            content: 'Hello,';
+            margin-right: 5px;
+        }
+
+        div::after {
+            content: 'Vee';
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn btn-hover">Hover</button>
+    <button class="btn btn-active">Active</button>
+    <button class="btn btn-focus">Focus</button>
+    <div>Morning!</div>
+</body>
+
+</html>
