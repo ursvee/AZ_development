@@ -19,4 +19,3 @@ console.log("End do while");
 for (let num = 1; num <= 5; num++) {
     console.log(`Number is: ${num}`);
 }
-
